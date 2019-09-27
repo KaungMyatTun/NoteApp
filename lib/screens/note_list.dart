@@ -26,6 +26,7 @@ class NoteListState extends State<NoteList>{
     }
 
     return Scaffold(
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         title: Text('Notes'),
         centerTitle: false,
@@ -34,6 +35,7 @@ class NoteListState extends State<NoteList>{
       // note list view
       body: getNoteListView(),
 
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       // floating action button
       floatingActionButton: FloatingActionButton(
         onPressed: (){
@@ -42,6 +44,21 @@ class NoteListState extends State<NoteList>{
         },
         tooltip: 'Add Note',
         child: Icon(Icons.add),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        shape: CircularNotchedRectangle(),
+        child: Container(
+          height: 50.0,
+          color: Colors.transparent,
+          child: Center(
+            child: RaisedButton(
+              child: Text('Owner'), 
+              onPressed: () {
+
+              },
+            )
+          )
+        ),
       ),
     );
   }

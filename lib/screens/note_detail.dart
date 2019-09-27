@@ -84,7 +84,7 @@ class NoteDetailState extends State<Notedetail> {
                   style: textStyle,
                   onChanged: (value) {
                     debugPrint('on changed on title textfield');
-                    updateTitle();
+                    updateTitle();                  
                   },
                   decoration: InputDecoration(
                       labelText: 'Title',

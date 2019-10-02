@@ -14,6 +14,7 @@ class DatabaseHelper{
   String colTitle = 'title';
   String colDescription = 'description';
   String colPriority = 'priority';
+  
   String colDate = 'date';
   
   DatabaseHelper._createInstance(); // named constructor to create instance of databasehelper
